@@ -1,0 +1,137 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>قصيدة ومعناها</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+/* Layout: one centered column; calligraphic title, verses as two hemistichs split by a diamond, meaning below in plain text. */
+:root{
+  --bg:#eef2f0;--card:#fbfcfb;--ink:#13272b;--muted:#5d7276;--line:#cfdad7;
+  --accent:#0f5c63;--accent-ink:#ffffff;--gold:#a8741a;--chip:#e2eae8;
+  --f-title:"Aref Ruqaa","Amiri","Traditional Arabic",serif;
+  --f-verse:"Amiri","Traditional Arabic","Times New Roman",serif;
+  --f-ui:"Tajawal","Segoe UI",Tahoma,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c191c;--card:#12252a;--ink:#e9f1ee;--muted:#9bb2b4;--line:#244045;
+  --accent:#5fc2c0;--accent-ink:#06191b;--gold:#e3ad4a;--chip:#17313a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c191c;--card:#12252a;--ink:#e9f1ee;--muted:#9bb2b4;--line:#244045;
+  --accent:#5fc2c0;--accent-ink:#06191b;--gold:#e3ad4a;--chip:#17313a;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-ui);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+#app{max-width:680px;margin:0 auto}
+header{text-align:center;padding-block:36px 10px}
+h1{margin:0;font-family:var(--f-title);font-weight:700;font-size:clamp(2.2rem,9vw,3rem);line-height:1.3;color:var(--accent);text-wrap:balance}
+.hello{font-family:var(--f-verse);font-weight:700;font-size:clamp(1.2rem,5vw,1.6rem);color:var(--gold);margin-bottom:2px}
+header p{margin:8px auto 0;max-width:30em;color:var(--muted);line-height:1.8;text-wrap:balance}
+.rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px auto 0;color:var(--gold)}
+.rule i{display:block;height:1px;width:64px;background:var(--line)}
+.rule b{display:block;width:9px;height:9px;transform:rotate(45deg);background:var(--gold)}
+main{padding-block:14px 56px}
+.label{margin:22px 0 8px;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font-family:inherit;font-size:.98rem;cursor:pointer;padding:7px 16px;border:1px solid var(--line);border-radius:999px;background:var(--chip);color:var(--ink);transition:background .15s,color .15s,border-color .15s}
+.chips button:hover{border-color:var(--accent)}
+.chips button.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.row{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.row input,.row select{flex:1;min-width:150px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font-family:inherit;font-size:1rem}
+.row select{flex:0 1 190px}
+.row input::placeholder{color:var(--muted)}
+.go{display:block;width:100%;margin-top:14px;padding:14px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);font-family:var(--f-title);font-weight:700;font-size:1.3rem;cursor:pointer;transition:filter .15s}
+.go:hover:not(:disabled){filter:brightness(1.08)}
+.go:disabled{opacity:.6;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.card{margin-top:28px;padding:28px clamp(14px,4vw,32px) 24px;background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 0 var(--line)}
+.card h2{margin:0;text-align:center;font-family:var(--f-title);font-weight:700;font-size:1.8rem;line-height:1.4;color:var(--accent);text-wrap:balance}
+.card .rule{margin:10px auto 18px}
+.v{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:clamp(8px,3vw,22px);padding:11px 0;border-bottom:1px solid var(--line);font-family:var(--f-verse);font-size:clamp(1.15rem,4.6vw,1.5rem);line-height:2;animation:rise .5s ease both;animation-delay:calc(var(--i,0)*90ms)}
+.v:last-of-type{border-bottom:0}
+.v span{min-width:0;text-align:center;text-wrap:balance}
+.v em{display:block;width:7px;height:7px;transform:rotate(45deg);background:var(--gold);opacity:.8}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sec{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.sec h3{margin:0 0 8px;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:var(--gold)}
+.sec p{margin:0;line-height:2;font-size:1.05rem}
+.w{display:flex;gap:10px;padding:5px 0;line-height:1.8}
+.w b{flex:0 0 auto;color:var(--accent);font-family:var(--f-verse);font-size:1.15rem}
+.w span{min-width:0;color:var(--muted)}
+.tools{display:flex;justify-content:center;margin-top:22px}
+.tools button{font-family:inherit;font-size:.95rem;cursor:pointer;padding:8px 18px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink)}
+.tools button:hover{border-color:var(--accent);color:var(--accent)}
+.msg{text-align:center;color:var(--muted);margin-top:32px;line-height:1.9}
+.msg.busy{animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.v,.msg.busy{animation:none}}
+</style>
+<div id="app" dir="rtl" lang="ar">
+<header>
+<div class="hello">يالله حيّه بندر الشيخ</div>
+<h1>أمر، وش تبي قصيدة؟</h1>
+<p>اختر اللي تبيه، وتجيك قصيدة جديدة كل مرة مع شرح معناها</p>
+<div class="rule" aria-hidden="true"><i></i><b></b><i></i></div>
+</header>
+<main>
+<div class="label">الموضوع</div>
+<div class="chips" id="chips"></div>
+<div class="row">
+<select id="style" aria-label="الأسلوب">
+<option>فصحى</option>
+<option>شعبي (نبطي)</option>
+</select>
+<input id="extra" placeholder="أو اكتب اللي تبيه (مثلاً: قصيدة عن الغربة)">
+</div>
+<button class="go" id="go">هات قصيدة</button>
+<div id="out" aria-live="polite"></div>
+</main>
+</div>
+<script>
+var themes=["غزل","حكمة","فخر","شوق","رثاء","وطن","وصف الطبيعة","عتاب"],pick="غزل";
+var lastText="";
+var chips=document.getElementById("chips"),out=document.getElementById("out"),go=document.getElementById("go");
+themes.forEach(function(t){var b=document.createElement("button");b.textContent=t;if(t===pick)b.className="on";
+b.onclick=function(){pick=t;chips.querySelectorAll("button").forEach(function(x){x.className=""});b.className="on"};chips.appendChild(b)});
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+function rule(){var r=el("div","rule");r.setAttribute("aria-hidden","true");r.appendChild(el("i"));r.appendChild(el("b"));r.appendChild(el("i"));return r}
+function show(d){
+  out.innerHTML="";var c=el("div","card");
+  c.appendChild(el("h2","",d.title||"قصيدة"));
+  c.appendChild(rule());
+  var plain=[d.title||"قصيدة",""];
+  (d.lines||[]).forEach(function(l,i){var v=el("div","v");v.style.setProperty("--i",i);
+    var p=String(l).split("***").map(function(h){return h.trim()});
+    v.appendChild(el("span","",p[0]||""));
+    if(p.length>1){v.appendChild(el("em"));v.appendChild(el("span","",p[1]))}
+    else{v.style.gridTemplateColumns="1fr"}
+    plain.push(p.join("   "));c.appendChild(v)});
+  var s=el("div","sec");s.appendChild(el("h3","","المعنى"));s.appendChild(el("p","",d.meaning||""));c.appendChild(s);
+  plain.push("","المعنى:",d.meaning||"");
+  if(d.words&&d.words.length){var s2=el("div","sec");s2.appendChild(el("h3","","معاني كلمات"));
+    d.words.forEach(function(w){var r=el("div","w");r.appendChild(el("b","",w.w));r.appendChild(el("span","",w.m));s2.appendChild(r)});
+    c.appendChild(s2)}
+  lastText=plain.join("\n");
+  var t=el("div","tools");var cp=el("button","","نسخ القصيدة");
+  cp.onclick=function(){
+    var done=function(){cp.textContent="تم النسخ"};
+    try{navigator.clipboard.writeText(lastText).then(done,function(){cp.textContent="ما اننسخت، حددها وانسخها يدوي"})}
+    catch(e){cp.textContent="ما اننسخت، حددها وانسخها يدوي"}
+  };
+  t.appendChild(cp);c.appendChild(t);
+  out.appendChild(c);
+}
+(async function(){
+  var sample=await claude.use("sample");
+  if(!sample){go.disabled=true;out.appendChild(el("div","msg","هذي الصفحة تشتغل من داخل Claude فقط."));return}
+  go.onclick=async function(){
+    go.disabled=true;out.innerHTML="";out.appendChild(el("div","msg busy","جاري كتابة القصيدة..."));
+    var want=document.getElementById("extra").value.trim()||("قصيدة في "+pick);
+    var st=document.getElementById("style").value;
+    var prompt="اكتب قصيدة عربية أصلية جديدة بالكامل (من تأليفك، لا تنقل ولا تقتبس من قصيدة لشاعر معروف) حسب الطلب: "+want+". اللغة والأسلوب: "+st+". من 6 إلى 8 أبيات، موزونة على بحر واحد صحيح ومقفاة بقافية واحدة، بصور شعرية قوية وألفاظ مختارة ومعنى عميق، بدون حشو ولا تكرار، وتنتهي بخاتمة مؤثرة. رقم عشوائي للتنويع: "+Math.floor(Math.random()*1e6)+".\nأعد JSON فقط بدون أي نص آخر وبهذا الشكل: {\"title\":\"عنوان\",\"lines\":[\"الشطر الأول ***الشطر الثاني\"],\"meaning\":\"شرح معنى القصيدة بإيجاز في فقرة بنفس لهجة الأسلوب المطلوب\",\"words\":[{\"w\":\"كلمة صعبة\",\"m\":\"معناها\"}]}. اجعل كل بيت عنصراً واحداً في lines والشطرين مفصولين بـ ***. في words من 2 إلى 4 كلمات فقط.";
+    try{var d=await sample.json(prompt,{cache:false,modelTier:"complex"});show(d)}
+    catch(e){out.innerHTML="";out.appendChild(el("div","msg",e&&e.code==="not_granted"?"لازم توافق على السماح لـ Claude عشان تجيك القصيدة.":"صار خطأ، جرّب مرة ثانية."))}
+    go.disabled=false;
+  };
+})();
+</script>
+
+</body></html>
